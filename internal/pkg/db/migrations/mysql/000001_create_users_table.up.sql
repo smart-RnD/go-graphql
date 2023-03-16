@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS Users(
+    ID INT NOT NULL UNIQUE AUTO_INCREMENT,
+    Username VARCHAR (127) NOT NULL UNIQUE,
+    Password VARCHAR (127) NOT NULL,
+    Fullname VARCHAR (50) NULL,
+    token_login TEXT NULL,
+    token_register TEXT NULL,
+    status VARCHAR (10) DEFAULT 'AKTIF',
+    PRIMARY KEY (ID)
+)
